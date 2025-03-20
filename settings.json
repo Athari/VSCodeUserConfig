@@ -1,0 +1,477 @@
+{
+    // MARK: Workbench
+    "workbench.tree.indent": 20,
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.editor.limit.value": 20,
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.untitled.labelFormat": "name",
+    "workbench.colorTheme": "Default Dark+",
+
+    // MARK: Editor
+    "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.fontWeight": "400",
+    "editor.guides.bracketPairs": "active",
+    "editor.renderWhitespace": "trailing",
+    "editor.unicodeHighlight.allowedLocales": { "ru": true },
+    "editor.emptySelectionClipboard": false,
+    "editor.minimap.size": "fill",
+
+    // MARK: Window
+    "window.density.editorTabHeight": "compact",
+    "window.restoreWindows": "none",
+    "window.newWindowDimensions": "maximized",
+    "window.title": "${dirty}${rootNameShort}${separator}${activeRepositoryName}@${activeRepositoryBranchName}${separator}${activeEditorShort}${separator}${profileName}${separator}${appName}",
+    "window.titleSeparator": " ┃ ",
+
+    // MARK: Files
+    "files.associations": {
+        "*.jsinc": "javascript",
+    },
+    "files.exclude": {
+        "**/.vs": true,
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    // MARK: Language exts
+    "json.format.keepLines": true,
+    "markdown.preview.lineHeight": 1.3,
+    "redhat.telemetry.enabled": false,
+    "html.format.wrapLineLength": 0,
+    "powershell.powerShellDefaultVersion": "PowerShell Preview (x64)",
+    "powershell.powerShellAdditionalExePaths": {
+        "sys-7-preview": "C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe"
+    },
+    "python.formatting.autopep8Args": [
+        "--ignore=E302"
+    ],
+    "scriptmonkey.metaData.default.author": "Athari (https://github.com/Athari)",
+    "scriptmonkey.activation condition.file suffix": [
+        ".user.js",
+        ".u.js",
+    ],
+    "svelte.enable-ts-plugin": true,
+    "svelte.plugin.svelte.format.config.printWidth": 0,
+    "prettier.arrowParens": "avoid",
+    "prettier.printWidth": 0,
+    "prettier.vueIndentScriptAndStyle": true,
+
+    // MARK: Workbench theme
+    "workbench.colorCustomizations": {
+        "editorBracketHighlight.foreground1": "#ffd700",
+        "editorBracketHighlight.foreground2": "#5db655",
+        "editorBracketHighlight.foreground3": "#00e8fc",
+        "editorBracketHighlight.foreground4": "#498dfe",
+        "editorBracketHighlight.foreground5": "#fe2ed5",
+        //"editorBracketHighlight.foreground6": "#d36535",
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+
+            // MARK: JSON theme
+            {
+                "scope": [
+                    "string.key.json5",
+                ],
+                "settings": { "foreground": "#9df" },
+            },
+            {
+                "scope": [
+                    "constant.dec.numeric.json5",
+                    "constant.hex.numeric.json5",
+                ],
+                "settings": { "foreground": "#bca" },
+            },
+
+            // MARK: HTML theme
+            {
+                "scope": [
+                    "entity.name.tag",
+                ],
+                "settings": { "foreground": "#59d" },
+            },
+            {
+                "scope": [
+                    "punctuation.definition.tag",
+                ],
+                "settings": { "foreground": "#366a9e" },
+            },
+
+            // MARK: CSS theme
+            {
+                "scope": [
+                    "source.css entity.other.attribute-name.id.css",
+                    "source.css.less entity.other.attribute-name.id.less",
+                ],
+                "settings": { "foreground": "#dd7" },
+            },
+            {
+                "scope": [
+                    "source.css entity.name.tag.custom",
+                    "source.css entity.name.tag.css",
+                    "source.css entity.name.tag.less",
+                ],
+                "settings": { "foreground": "#6b8" },
+            },
+            {
+                "scope": [
+                    "source.css entity.other.attribute-name.pseudo-class.css",
+                    "source.css entity.other.attribute-name.pseudo-class.less",
+                ],
+                "settings": { "foreground": "#d47" },
+            },
+            {
+                "scope": [
+                    "source.css entity.other.attribute-name.pseudo-element.css",
+                    "source.css entity.other.attribute-name.pseudo-element.less",
+                ],
+                "settings": { "foreground": "#d5e" },
+            },
+            {
+                "scope": [
+                    "source.css support.type.custom-property", // --a .less
+                    "source.css variable.css",
+                    "source.css meta.function.variable.css variable.argument.css",
+                    "source.css support.other.variable", // @var .less
+                ],
+                "settings": { "foreground": "#4cb" },
+            },
+            {
+                "scope": [
+                    "source.css support.function.var",
+                    "source.css meta.function.variable.css support.function.misc.css",
+                    "source.css punctuation.definition.variable", // @v .less
+                ],
+                "settings": { "foreground": "#297" },
+            },
+
+            // MARK: Markdown theme
+            {
+                "scope": [
+                    "markup.heading",
+                ],
+                "settings": { "foreground": "#dd7" },
+            },
+            {
+                "scope": [
+                    "markup.bold",
+                    "markup.italic",
+                ],
+                "settings": { "foreground": "#eee" },
+            },
+            {
+                "scope": [
+                    "markup.bold markup.italic",
+                    "markup.italic markup.bold",
+                ],
+                "settings": { "fontStyle": "italic bold" },
+            },
+            {
+                "scope": [
+                    "markup.strikethrough markup.bold",
+                    "markup.bold markup.strikethrough",
+                ],
+                "settings": { "fontStyle": "bold strikethrough" },
+            },
+            {
+                "scope": [
+                    "markup.strikethrough markup.italic",
+                    "markup.italic markup.strikethrough",
+                ],
+                "settings": { "fontStyle": "italic strikethrough" },
+            },
+            {
+                "scope": [
+                    "markup.strikethrough markup.bold markup.italic",
+                    "markup.strikethrough markup.italic markup.bold",
+                    "markup.bold markup.strikethrough markup.italic",
+                    "markup.italic markup.strikethrough markup.bold",
+                    "markup.bold markup.italic markup.strikethrough",
+                    "markup.italic markup.bold markup.strikethrough",
+                ],
+                "settings": { "fontStyle": "italic bold strikethrough" },
+            },
+            {
+                "scope": [
+                    "punctuation.definition.bold.markdown",
+                    "punctuation.definition.italic.markdown",
+                    "punctuation.definition.heading.markdown",
+                ],
+                "settings": { "foreground": "#888" },
+            },
+            {
+                "scope": [
+                    "punctuation.definition.list.begin.markdown",
+                    "punctuation.definition.list.end.markdown",
+                    "punctuation.definition.table",
+                    "punctuation.separator.table",
+                ],
+                "settings": { "foreground": "#db7" },
+            },
+            {
+                "scope": [
+                    "meta.image.inline.markdown markup.underline.link.image.markdown",
+                    "meta.image.inline.markdown string.other.link.description.markdown",
+                    "meta.image.inline.markdown string.other.link.description.title.markdown",
+                    "meta.image.reference.markdown string.other.link.description.markdown",
+                    "meta.image.reference.markdown constant.other.reference.link.markdown",
+                ],
+                "settings": { "foreground": "#6b8" },
+            },
+            {
+                "scope": [
+                    "punctuation.definition.link.description.begin.markdown",
+                    "punctuation.definition.link.description.end.markdown",
+                    "meta.image.inline.markdown punctuation.definition.metadata.markdown",
+                    "meta.image.inline.markdown punctuation.definition.string.begin.markdown",
+                    "meta.image.inline.markdown punctuation.definition.string.end.markdown",
+                    "meta.image.reference.markdown punctuation.definition.constant.markdown",
+                ],
+                "settings": { "foreground": "#586" },
+            },
+            {
+                "scope": [
+                    "string.other.link.title.markdown",
+                    "string.other.link.title.markdown markup.bold",
+                    "string.other.link.title.markdown markup.italic",
+                    "meta.link.inline.markdown markup.underline.link.markdown",
+                    "meta.link.reference.def.markdown constant.other.reference.link.markdown",
+                    "meta.link.reference.def.markdown markup.underline.link.markdown",
+                    "meta.link.reference.markdown constant.other.reference.link.markdown",
+                    "meta.link.inet.markdown markup.underline.link.markdown",
+                ],
+                "settings": { "foreground": "#c97" },
+            },
+            {
+                "scope": [
+                    "punctuation.definition.link.title.begin.markdown",
+                    "punctuation.definition.link.title.end.markdown",
+                    "meta.link.inline.markdown punctuation.definition.metadata.markdown",
+                    "meta.link.reference.def.markdown punctuation.definition.constant.markdown",
+                    "meta.link.reference.markdown punctuation.definition.constant.begin.markdown",
+                    "meta.link.reference.markdown punctuation.definition.constant.end.markdown",
+                    "meta.link.inet.markdown punctuation.definition.link.markdown",
+                ],
+                "settings": { "foreground": "#965" },
+            },
+            {
+                "scope": [
+                    "markup.inline.raw.string",
+                    "markup.raw.block",
+                    "markup.fenced_code.block",
+                ],
+                "settings": { "foreground": "#9df" },
+            },
+            {
+                "scope": [
+                    "markup.fenced_code.block punctuation.definition",
+                    "markup.inline.raw.string punctuation.definition.raw",
+                ],
+                "settings": { "foreground": "#69a" },
+            },
+            {
+                "scope": [
+                    "markup.fenced_code.block fenced_code.block.language",
+                ],
+                "settings": { "fontStyle": "bold underline" },
+            },
+
+            // MARK: Punctuation
+            {
+                "scope": [
+                    "keyword.operator.type.annotation.ts", // :
+                    "punctuation.separator.array.json.comments", // [,]
+                    "punctuation.separator.array.json5", // [,]
+                    "punctuation.separator.comma", // , .ts|cs
+                    "punctuation.separator.delimiter", // , .c
+                    "punctuation.separator.delimeter.comma", // , .makefile
+                    "punctuation.separator.dictionary.key-value.json.comments", // a,b
+                    "punctuation.separator.dictionary.key-value.json5", // a,b
+                    "punctuation.separator.dictionary.pair.json.comments", // a:b
+                    "punctuation.separator.dictionary.pair.json5", // a:b
+                    "punctuation.separator.element.python", // ,
+                    "punctuation.separator.sequence", // , .yaml
+                    "punctuation.separator.parameter", // a,b
+                    "punctuation.comma.dart", // , .dart
+                    "punctuation.decorator.ts",
+                    "punctuation.terminator", // ; .statement|java
+                ],
+                "settings": { "foreground": "#999" },
+            },
+
+            // MARK: Strings
+            {
+                "scope": [
+                    "punctuation.definition.string.begin",
+                    "punctuation.definition.string.end",
+                    "punctuation.definition.string.template.begin",
+                    "punctuation.definition.string.template.end",
+                ],
+                "settings": { "foreground": "#965" },
+            },
+            {
+                "scope": [
+                    "meta.object-literal.key string.quoted",
+                ],
+                "settings": { "foreground": "#9df" },
+            },
+            {
+                "scope": [
+                    "meta.object-literal.key string.quoted punctuation.definition.string.begin",
+                    "meta.object-literal.key string.quoted punctuation.definition.string.end",
+                    "punctuation.support.type.property-name.begin.json",
+                    "punctuation.support.type.property-name.end.json",
+                ],
+                "settings": { "foreground": "#69a" },
+            },
+
+            // MARK: Comments
+            {
+                "scope": [
+                    "comment",
+                ],
+                "settings": { "foreground": "#888", "fontStyle": "italic" },
+            },
+            {
+                "scope": [
+                    "punctuation.definition.comment",
+                ],
+                "settings": { "foreground": "#444" },
+            },
+            {
+                "scope": [
+                    "entity.name.type.instance.jsdoc",
+                    "meta.example.jsdoc",
+                    "storage.type.class.jsdoc",
+                    "variable.other.jsdoc",
+                ],
+                "settings": { "fontStyle": "" },
+            },
+            {
+                "scope": [
+                    "meta.example.jsdoc",
+                ],
+                "settings": { "foreground": "#779" },
+            },
+
+            // MARK: Variables
+            // Var: paremeter
+            // {
+            //     "scope": [
+            //         "variable.parameter",
+            //     ],
+            //     "settings": { "foreground": "#d597e7" },
+            // },
+            // Var: mutable
+            {
+                "scope": [
+                    "variable.other.readwrite.ts",
+                    "keyword.control.as.ts",
+                ],
+                "settings": { "foreground": "#db7" },
+            },
+            // Var: import
+            {
+                "scope": [
+                    "meta.import variable.other.readwrite.alias",
+                ],
+                "settings": { "foreground": "#9df" },
+            },
+
+            // MARK: Types
+            // Type: class
+            {
+                "scope": [
+                    "entity.name.type.class",
+                ],
+                "settings": { "fontStyle": "bold" },
+            },
+            // Type: primitive
+            {
+                "scope": [
+                    "support.type.primitive",
+                    "support.type.builtin",
+                ],
+                "settings": { "foreground": "#0a9", "fontStyle": "bold" },
+            },
+        ],
+    },
+
+    // MARK: ToDo highlight
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.toggleURI": false,
+    "todohighlight.defaultStyle": {
+        "isWholeLine": true,
+        "overviewRulerColor": "grey",
+        "borderRadius": "0px",
+    },
+    "todohighlight.keywords": [
+        {
+            "text": "HACK:",
+            "color": "oklch(70% 0.15 65)",
+            "backgroundColor": "oklch(50% 0.15 65 / 0.3)",
+            "overviewRulerColor": "oklch(50% 0.18 65)",
+        },
+        {
+            "text": "BUG:",
+            "color": "oklch(70% 0.18 25)",
+            "backgroundColor": "oklch(40% 0.15 25 / 0.3)",
+            "overviewRulerColor": "oklch(50% 0.18 25)",
+        },
+        {
+            "text": "TODO:",
+            "color": "oklch(80% 0.15 265)",
+            "backgroundColor": "oklch(40% 0.15 265 / 0.3)",
+            "overviewRulerColor": "oklch(50% 0.18 265)",
+        }
+    ],
+
+    // MARK: Multi-commands
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.scrollLineUpKeepCursor",
+            "sequence": [
+                { "command": "editorScroll", "args": { "to": "up", "by": "line" } },
+                { "command": "cursorMove", "args": { "to": "viewPortIfOutside" } }
+            ]
+        },
+        {
+            "command": "multiCommand.scrollLineDownKeepCursor",
+            "sequence": [
+                { "command": "editorScroll", "args": { "to": "down", "by": "line" } },
+                { "command": "cursorMove", "args": { "to": "viewPortIfOutside" } }
+            ]
+        }
+    ],
+
+    // MARK: Language-specific
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+}
