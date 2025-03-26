@@ -17,6 +17,7 @@
     "editor.unicodeHighlight.allowedLocales": { "ru": true },
     "editor.emptySelectionClipboard": false,
     "editor.minimap.size": "fill",
+    "editor.semanticHighlighting.enabled": true,
 
     // MARK: Window
     "window.density.editorTabHeight": "compact",
@@ -24,6 +25,7 @@
     "window.newWindowDimensions": "maximized",
     "window.title": "${dirty}${rootNameShort}${separator}${activeRepositoryName}@${activeRepositoryBranchName}${separator}${activeEditorShort}${separator}${profileName}${separator}${appName}",
     "window.titleSeparator": " ┃ ",
+    "window.customTitleBarVisibility": "windowed",
 
     // MARK: Files
     "files.associations": {
@@ -36,6 +38,7 @@
     "files.trimTrailingWhitespace": true,
 
     // MARK: Language exts
+    "debug.onTaskErrors": "showErrors",
     "json.format.keepLines": true,
     "markdown.preview.lineHeight": 1.3,
     "redhat.telemetry.enabled": false,
@@ -66,6 +69,17 @@
         "editorBracketHighlight.foreground4": "#498dfe",
         "editorBracketHighlight.foreground5": "#fe2ed5",
         //"editorBracketHighlight.foreground6": "#d36535",
+        "editorCursor.foreground": "#fff",
+        "editor.selectionBackground": "#138", // select main = #247
+        "editor.selectionHighlightBackground": "#0c83", // highlight text equal to selected
+        "editor.wordHighlightBackground":"#fff2", // highlight word under cursor
+        "editor.wordHighlightStrongBackground": "#66f5", // highlight definition of word under cursor
+        "editor.wordHighlightTextBackground":"#fff2", // highlight word under cursor
+        "editor.hoverHighlightBackground": "#4698", // highlight word under mouse cursor
+        "editor.rangeHighlightBackground": "#66f2", // highlight line during search
+        "editor.symbolHighlightBackground": "#88f8", // brief highlight after navigation
+        "editor.findMatchBackground": "#515c6a",
+        "editor.findMatchHighlightBackground":"#f444",
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -276,6 +290,32 @@
                     "markup.fenced_code.block fenced_code.block.language",
                 ],
                 "settings": { "fontStyle": "bold underline" },
+            },
+
+            // MARK: PowerShell theme
+            {
+                "scope": [
+                    "keyword.operator.logical.powershell",
+                ],
+                "settings": { "foreground": "#6b8" },
+            },
+            {
+                "scope": [
+                    "keyword.operator.comparison.powershell",
+                ],
+                "settings": { "foreground": "#db7" },
+            },
+            {
+                "scope": [
+                    "keyword.operator.other.powershell",
+                ],
+                "settings": { "foreground": "#999" },
+            },
+            {
+                "scope": [
+                    "support.function.powershell",
+                ],
+                "settings": { "foreground": "#4d6" },
             },
 
             // MARK: Punctuation
