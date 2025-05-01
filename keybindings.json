@@ -41,7 +41,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+e",
+        "key": "shift+alt+l",
         "command": "workbench.files.action.showActiveFileInExplorer"
     }
 ]

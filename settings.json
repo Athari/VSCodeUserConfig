@@ -6,9 +6,10 @@
     "workbench.editor.wrapTabs": true,
     "workbench.editor.untitled.labelFormat": "name",
     "workbench.colorTheme": "Default Dark+",
+    "workbench.editor.empty.hint": "hidden",
 
     // MARK: Editor
-    "editor.fontFamily": "Cascadia Code, Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Cascadia Code, Consolas, Segoe UI Symbol, monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.fontWeight": "400",
@@ -16,7 +17,6 @@
     "editor.renderWhitespace": "trailing",
     "editor.unicodeHighlight.allowedLocales": { "ru": true },
     "editor.emptySelectionClipboard": false,
-    "editor.minimap.size": "fill",
     "editor.semanticHighlighting.enabled": true,
 
     // MARK: Window
@@ -60,14 +60,16 @@
     "prettier.arrowParens": "avoid",
     "prettier.printWidth": 0,
     "prettier.vueIndentScriptAndStyle": true,
+    "inlineChat.lineNaturalLanguageHint": false,
+    "inlineChat.lineEmptyHint": false,
 
     // MARK: Workbench theme
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#ffd700",
-        "editorBracketHighlight.foreground2": "#5db655",
-        "editorBracketHighlight.foreground3": "#00e8fc",
-        "editorBracketHighlight.foreground4": "#498dfe",
-        "editorBracketHighlight.foreground5": "#fe2ed5",
+        "editorBracketHighlight.foreground2": "#52914c",
+        "editorBracketHighlight.foreground4": "#377ef0",
+        "editorBracketHighlight.foreground3": "#e08e68",
+        "editorBracketHighlight.foreground5": "#ff1ed2",
         //"editorBracketHighlight.foreground6": "#d36535",
         "editorCursor.foreground": "#fff",
         "editor.selectionBackground": "#138", // select main = #247
@@ -318,6 +320,19 @@
                 "settings": { "foreground": "#4d6" },
             },
 
+            // MARK: C++ theme
+            {
+                "scope": [
+                    "variable.parameter.cpp",
+                ],
+                "settings": { "foreground": "#db7" },
+            },
+            {
+                "scope": [
+                    "entity.name.namespace.cpp",
+                ],
+                "settings": { "foreground": "#3cafa2" },
+            },
             // MARK: Punctuation
             {
                 "scope": [
@@ -336,6 +351,7 @@
                     "punctuation.separator.parameter", // a,b
                     "punctuation.comma.dart", // , .dart
                     "punctuation.decorator.ts",
+                    "punctuation.separator.namespace.access.cpp", // a::b
                     "punctuation.terminator", // ; .statement|java
                 ],
                 "settings": { "foreground": "#999" },
@@ -514,4 +530,6 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "editor.minimap.size": "fill",
+    "C_Cpp.default.compilerPath": "cl.exe",
 }
