@@ -297,13 +297,21 @@
             // MARK: PowerShell theme
             {
                 "scope": [
-                    "keyword.operator.logical.powershell",
+                    "keyword.operator.logical.powershell", // -and
+                    "keyword.operator.redirection.powershell", // >>
                 ],
                 "settings": { "foreground": "#6b8" },
             },
             {
                 "scope": [
-                    "keyword.operator.comparison.powershell",
+                    "punctuation.definition.variable.powershell", // $
+                ],
+                "settings": { "foreground": "#69a" },
+            },
+            {
+                "scope": [
+                    "keyword.operator.comparison.powershell", // -eq
+                    "keyword.operator.unary.powershell", // -join
                 ],
                 "settings": { "foreground": "#db7" },
             },
@@ -315,7 +323,7 @@
             },
             {
                 "scope": [
-                    "support.function.powershell",
+                    "support.function.powershell", // Get-Foo
                 ],
                 "settings": { "foreground": "#4d6" },
             },
