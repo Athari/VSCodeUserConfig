@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"git.enableSmartCommit": true
+		"git.enableSmartCommit": true,
+		"sarif-viewer.connectToGithubCodeScanning": "off"
 	}
 }

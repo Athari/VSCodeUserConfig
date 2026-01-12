@@ -43,5 +43,9 @@
     {
         "key": "shift+alt+l",
         "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "ctrl+shift+alt+space",
+        "command": "editor.action.inlineSuggest.trigger"
     }
 ]
