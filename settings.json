@@ -5,7 +5,7 @@
     "workbench.editor.limit.value": 20,
     "workbench.editor.wrapTabs": true,
     "workbench.editor.untitled.labelFormat": "name",
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Dark+",
     "workbench.editor.empty.hint": "hidden",
     "workbench.secondarySideBar.showLabels": false,
 
@@ -157,6 +157,33 @@
             { "settings": { "foreground": "#366a9e" }, "scope": [
                 "punctuation.definition.tag",
             ]},
+            { "settings": { "foreground": "#db7" }, "scope": [
+                "meta.attribute.class.html string.quoted.double.html",
+                "meta.attribute.class.html string.quoted.single.html",
+            ]},
+            { "settings": { "foreground": "#872" }, "scope": [
+                "meta.attribute.class.html string.quoted.double.html punctuation.definition.string.begin",
+                "meta.attribute.class.html string.quoted.double.html punctuation.definition.string.end",
+                "meta.attribute.class.html string.quoted.single.html punctuation.definition.string.begin",
+                "meta.attribute.class.html string.quoted.single.html punctuation.definition.string.end",
+            ]},
+            { "settings": { "foreground": "#dd7" }, "scope": [
+                "meta.attribute.id.html string.quoted.double.html",
+                "meta.attribute.id.html string.quoted.single.html",
+            ]},
+            { "settings": { "foreground": "#771" }, "scope": [
+                "meta.attribute.id.html string.quoted.double.html punctuation.definition.string.begin",
+                "meta.attribute.id.html string.quoted.double.html punctuation.definition.string.end",
+                "meta.attribute.id.html string.quoted.single.html punctuation.definition.string.begin",
+                "meta.attribute.id.html string.quoted.single.html punctuation.definition.string.end",
+            ]},
+            { "settings": { "fontStyle": "underline" }, "scope": [
+                "meta.attribute.href.html string.quoted",
+            ]},
+            { "settings": { "fontStyle": "" }, "scope": [
+                "meta.attribute.href.html string.quoted punctuation.definition.string.begin",
+                "meta.attribute.href.html string.quoted punctuation.definition.string.end",
+            ]},
 
             // MARK: CSS theme
             { "settings": { "foreground": "#dd7" }, "scope": [
@@ -299,6 +326,18 @@
             ]},
             { "settings": { "foreground": "#3cafa2" }, "scope": [
                 "entity.name.namespace.cpp",
+            ]},
+
+            // MARK: PHP theme
+            { "settings": { "fontStyle": "underline" }, "scope": [
+                "meta.embedded.line.php",
+            ]},
+            { "settings": { "foreground": "#ee6" }, "scope": [
+                "punctuation.section.embedded.begin.php",
+                "punctuation.section.embedded.end.php",
+            ]},
+            { "settings": { "foreground": "#5bf" }, "scope": [
+                "variable.other.global.safer.php",
             ]},
 
             // MARK: Punctuation
@@ -475,4 +514,8 @@
             "approveResponse": true
         }
     },
+    "terminal.integrated.commandsToSkipShell": [
+        "kilo-code.new.agentManagerOpen",
+        "kilo-code.new.agentManager.showTerminal"
+    ],
 }
