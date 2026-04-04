@@ -158,30 +158,34 @@
                 "punctuation.definition.tag",
             ]},
             { "settings": { "foreground": "#db7" }, "scope": [
-                "meta.attribute.class.html string.quoted.double.html",
+                "meta.attribute.class.html string.quoted.double.html", // class attr
                 "meta.attribute.class.html string.quoted.single.html",
             ]},
             { "settings": { "foreground": "#872" }, "scope": [
-                "meta.attribute.class.html string.quoted.double.html punctuation.definition.string.begin",
+                "meta.attribute.class.html string.quoted.double.html punctuation.definition.string.begin", // quotes around class attr
                 "meta.attribute.class.html string.quoted.double.html punctuation.definition.string.end",
                 "meta.attribute.class.html string.quoted.single.html punctuation.definition.string.begin",
                 "meta.attribute.class.html string.quoted.single.html punctuation.definition.string.end",
             ]},
             { "settings": { "foreground": "#dd7" }, "scope": [
-                "meta.attribute.id.html string.quoted.double.html",
+                "meta.attribute.id.html string.quoted.double.html", // id attr
                 "meta.attribute.id.html string.quoted.single.html",
             ]},
-            { "settings": { "foreground": "#771" }, "scope": [
-                "meta.attribute.id.html string.quoted.double.html punctuation.definition.string.begin",
+            { "settings": { "foreground": "#882" }, "scope": [
+                "meta.attribute.id.html string.quoted.double.html punctuation.definition.string.begin", // quotes around id attr
                 "meta.attribute.id.html string.quoted.double.html punctuation.definition.string.end",
                 "meta.attribute.id.html string.quoted.single.html punctuation.definition.string.begin",
                 "meta.attribute.id.html string.quoted.single.html punctuation.definition.string.end",
             ]},
             { "settings": { "fontStyle": "underline" }, "scope": [
-                "meta.attribute.href.html string.quoted",
+                "meta.attribute.href.html string.quoted", // href attr
+                "meta.attribute.href.html string.quoted.double.php punctuation.definition.string.begin", // <a href="<?="text"
+                "meta.attribute.href.html string.quoted.double.php punctuation.definition.string.end",
+                "meta.attribute.href.html string.quoted.single.php punctuation.definition.string.begin",
+                "meta.attribute.href.html string.quoted.single.php punctuation.definition.string.end",
             ]},
             { "settings": { "fontStyle": "" }, "scope": [
-                "meta.attribute.href.html string.quoted punctuation.definition.string.begin",
+                "meta.attribute.href.html string.quoted punctuation.definition.string.begin", // quotes around href attr
                 "meta.attribute.href.html string.quoted punctuation.definition.string.end",
             ]},
 
@@ -329,15 +333,21 @@
             ]},
 
             // MARK: PHP theme
-            { "settings": { "fontStyle": "underline" }, "scope": [
-                "meta.embedded.line.php",
+            { "settings": { "foreground": "#888", "fontStyle": "underline" }, "scope": [
+                "meta.embedded.line.php", // single-line <? ... ?>
             ]},
-            { "settings": { "foreground": "#ee6" }, "scope": [
-                "punctuation.section.embedded.begin.php",
-                "punctuation.section.embedded.end.php",
+            { "settings": { "foreground": "#ee6", "fontStyle": "" }, "scope": [
+                "punctuation.section.embedded.begin.php", // <? <?php
+                "punctuation.section.embedded.end.php", // ?>
             ]},
             { "settings": { "foreground": "#5bf" }, "scope": [
-                "variable.other.global.safer.php",
+                "variable.other.global.safer.php", // $_GET
+            ]},
+            { "settings": { "foreground": "#69a" }, "scope": [
+                "punctuation.definition.variable.php", // $ in $foo
+            ]},
+            { "settings": { "foreground": "#369" }, "scope": [
+                "variable.language punctuation.definition.variable.php", // $ in $this
             ]},
 
             // MARK: Punctuation
@@ -518,4 +528,5 @@
         "kilo-code.new.agentManagerOpen",
         "kilo-code.new.agentManager.showTerminal"
     ],
+    "editor.trimWhitespaceOnDelete": true,
 }
