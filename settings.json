@@ -349,6 +349,9 @@
             { "settings": { "foreground": "#369" }, "scope": [
                 "variable.language punctuation.definition.variable.php", // $ in $this
             ]},
+            { "settings": { "foreground": "#5bf" }, "scope": [
+                "keyword.operator.nullable-type.php", // ? in ?string
+            ]},
 
             // MARK: Punctuation
             { "settings": { "foreground": "#999" }, "scope": [
@@ -529,4 +532,7 @@
         "kilo-code.new.agentManager.showTerminal"
     ],
     "editor.trimWhitespaceOnDelete": true,
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
 }
