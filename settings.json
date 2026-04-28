@@ -352,6 +352,9 @@
             { "settings": { "foreground": "#5bf" }, "scope": [
                 "keyword.operator.nullable-type.php", // ? in ?string
             ]},
+            { "settings": { "foreground": "#59d" }, "scope": [
+                "support.constant.std.php", // ENT_QUOTES
+            ]},
 
             // MARK: Punctuation
             { "settings": { "foreground": "#999" }, "scope": [
@@ -534,5 +537,8 @@
     "editor.trimWhitespaceOnDelete": true,
     "[svg]": {
         "editor.defaultFormatter": "jock.svg"
+    },
+    "editor.unicodeHighlight.allowedCharacters": {
+        "‘": true
     },
 }
